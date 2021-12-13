@@ -1,0 +1,124 @@
+.service {
+  background-color: #f8f8f8;
+  padding: 100px 0 200px;
+  box-sizing: border-box;
+  .inner {
+    max-width: 1220px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &__context {
+    width: 100%;
+    display: flex;
+  }
+
+  &__text {
+    &__subtitle {
+      margin-bottom: 15px;
+      font-size: 30px;
+      letter-spacing: 7.5;
+      color: #6da1d2;
+      font-weight: 500;
+    }
+
+    &__title {
+      width: 400px;
+      font-size: 43px;
+      letter-spacing: -6.15px;
+      margin-left: -3px;
+    }
+
+    &__view {
+      width: 212px;
+      height: 66px;
+      margin-top: 45px;
+      margin-left: -10px;
+    }
+  }
+
+  &__menu {
+    width: 815px;
+    &__lists {
+      display: flex;
+      flex-wrap: wrap;
+      &__item {
+        width: 407px;
+        height: 392px;
+        padding: 0 0 90px 70px;
+        box-sizing: border-box;
+        &__img {
+          margin: 0 auto;
+        }
+
+        &__title {
+          padding: 20px 0 10px;
+          font-size: 30px;
+          color: #212121;
+          text-align: center;
+        }
+
+        &__subtitle {
+          text-align: center;
+          padding-bottom: 10px;
+          font-size: 24px;
+          letter-spacing: -0.72px;
+          color: #6ca0d2;
+        }
+
+        &__p {
+          line-height: 1.5;
+          letter-spacing: -0.64px;
+          font-size: 16px;
+          color: #333;
+        }
+      }
+    }
+  }
+
+  &__buttons {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    &__btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 380px;
+      height: 124px;
+      border: 1px solid #dedede;
+      border-radius: 62px;
+      color: #6ca0d2;
+      font-size: 30px;
+      letter-spacing: -0.6px;
+      background-color: #fff;
+      font-weight: 700;
+      box-sizing: border-box;
+      box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16);
+    }
+  }
+  &__logo {
+    z-index: 1;
+    width: 1456px;
+    position: absolute;
+    bottom: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+// .back-to-position {
+//   opacity: 0;
+//   transition: 1s;
+// }
+// .back-to-position.to-right {
+//   transform: translateX(-150px);
+// }
+// .back-to-position.to-left {
+//   transform: translateX(150px);
+// }
+// .show .back-to-position {
+//   opacity: 1;
+//   transform: translateX(0);
+// }

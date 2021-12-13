@@ -1,0 +1,16 @@
+.modulebt {
+  background-color: #f8f8f8;
+  position: relative;
+  padding: 180px 0 120px;
+  height: 1320px;
+  box-sizing: border-box;
+
+  .inner {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+
+  &__lists {
+    position: relative;
+  }
+}

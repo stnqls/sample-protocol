@@ -1,0 +1,67 @@
+.modulebt {
+  background-color: #f8f8f8;
+  position: relative;
+  padding: 180px 0 120px;
+  height: 1320px;
+  box-sizing: border-box;
+
+  .inner {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+
+  &__lists {
+    position: relative;
+    &__item {
+      width: 360px;
+      height: 450px;
+      margin: 0 40px 60px 0;
+      background-color: #fff;
+      box-shadow: 1.5px 2.6px 12px 0 rgba(0, 0, 0, 0.06);
+      color: #202020;
+      padding-top: 69px;
+      box-sizing: border-box;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      float: left;
+      &__img {
+        width: 75px;
+        height: 75px;
+      }
+
+      &__title {
+        margin-top: 30px;
+        font-size: 26px;
+        letter-spacing: -0.52px;
+      }
+
+      &__text {
+        width: 300px;
+        margin-top: 20px;
+        letter-spacing: -0.32px;
+
+        &__list {
+          margin-top: 20px;
+          &__item {
+            letter-spacing: -0.8px;
+            padding-left: 12px;
+            box-sizing: border-box;
+            position: relative;
+            &::before {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 8px;
+              width: 5px;
+              height: 1px;
+              background: #202020;
+            }
+          }
+        }
+      }
+    }
+  }
+}

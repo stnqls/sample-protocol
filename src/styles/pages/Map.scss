@@ -1,0 +1,16 @@
+.map {
+  padding: 180px 0;
+  background-color: #f8f8f8;
+
+  .inner {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin-bottom: 95px;
+    font-size: 50px;
+    color: #212121;
+    font-weight: 700;
+  }
+}

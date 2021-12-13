@@ -1,0 +1,30 @@
+.footer {
+  padding: 70px 0;
+  background-color: #232323;
+  color: #fff;
+
+  .inner {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+
+  &__lists {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__item {
+      font-size: 10px;
+    }
+    &__p {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 18px;
+      &__l {
+        margin-right: 29px;
+        font-weight: 900;
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@import "../common.scss";
+
+.mainpage {
+  background: #f8f8f8 url("../../images/bg_section1.png") no-repeat center
+    bottom / cover;
+  height: 1397px;
+  text-align: center;
+  color: #fff;
+  .inner {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 164px;
+    font-weight: 900;
+    letter-spacing: -3.28px;
+    padding: 313px 0 100px;
+  }
+
+  &__subtitle {
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 500;
+  }
+
+  &__p {
+    padding: 30px 0 50px;
+    font-size: 22px;
+  }
+
+  &__button {
+    width: 211px;
+    margin: 0 auto;
+  }
+
+  &__down {
+    padding-top: 100px;
+    &__arrow {
+      img {
+        margin: 0 auto;
+        width: 18px;
+      }
+    }
+    &__line {
+      width: 1px;
+      height: 120px;
+      background-color: #fff;
+      margin: 20px auto 0;
+    }
+  }
+}

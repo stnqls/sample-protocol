@@ -1,0 +1,49 @@
+.mapslide {
+  width: 100%;
+  position: relative;
+  &__line {
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    border: 1px solid #e6e6e6;
+  }
+
+  &__box {
+    width: 212px;
+    &:hover {
+      .mapslide__box__img {
+        background-image: url("../../images/slide_icon_on.png");
+      }
+      .mapslide__box__date {
+        color: #6ca0d2;
+      }
+    }
+    &__year {
+      font-size: 36px;
+      color: #6ca0d2;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    &__img {
+      width: 37px;
+      height: 45px;
+      margin-bottom: 10px;
+      background-image: url("../../images/slide_icon.png");
+    }
+    &__date {
+      font-size: 23px;
+      color: #acacac;
+      margin-bottom: 15px;
+    }
+    &__text {
+      font-size: 16px;
+      letter-spacing: -0.36px;
+      color: #8c8c8c;
+    }
+  }
+}
+.slick-track::before,
+.slick-track::after {
+  display: none;
+}
