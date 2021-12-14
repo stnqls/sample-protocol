@@ -28,6 +28,7 @@
     width: 300px;
     margin-top: 20px;
     letter-spacing: -0.32px;
+    line-height: 1.6;
 
     &__list {
       margin-top: 20px;
@@ -36,6 +37,7 @@
         padding-left: 12px;
         box-sizing: border-box;
         position: relative;
+        line-height: 1.6;
         &::before {
           content: "";
           position: absolute;

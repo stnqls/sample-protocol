@@ -14,6 +14,7 @@ function ModuleDetail() {
               text={
                 "  비시 실시간 거래와 마이너 선매매의 취약성을 차단하고 탈중앙화 기록 조작과 탈취가 불가능하며 KYC 로그인 인증 없이 누구나 계정 생성 및 거래가 가능합니다."
               }
+              list={[]}
             />
           </li>
           <li className="modulebt__lists__item">
@@ -23,13 +24,13 @@ function ModuleDetail() {
               text={
                 "데이터 안에 있는 숨겨진 가치를 분석, 발굴하여 보여줌으로써 누구나 쉽게 이해하고 빠른 의사 결정을 진행할 수 있습니다."
               }
-              list={{
-                0: "빅데이터 기술, 암호화폐, 부동산 실시간 정보 취합",
-                1: "데이터 마이닝 분석 자료 및 예측 모델링 통합",
-              }}
+              list={[
+                "빅데이터 기술, 암호화폐, 부동산 실시간 정보 취합",
+                "데이터 마이닝 분석 자료 및 예측 모델링 통합",
+              ]}
             />
           </li>
-          {/* <li className="modulebt__lists__item">
+          <li className="modulebt__lists__item">
             <ModuleDetailItem
               img={`/images/icon_sec4_${"03"}.png`}
               title={"상환 상태 분석"}
@@ -80,7 +81,7 @@ function ModuleDetail() {
                 "암호화폐 자산 최소한도 도달 시 관리 및 재조정 경고",
               ]}
             />
-          </li> */}
+          </li>
         </ul>
       </div>
     </div>

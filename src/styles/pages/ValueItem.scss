@@ -1,0 +1,32 @@
+.valueitem {
+  display: flex;
+  padding-bottom: 50px;
+  &__left {
+    display: inline-block;
+    width: 210px;
+    &__en {
+      font-size: 40px;
+      letter-spacing: -0.8px;
+      font-weight: 900;
+    }
+    &__kr {
+      font-size: 30px;
+      letter-spacing: -0.6px;
+      font-weight: 900;
+    }
+  }
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__title {
+      font-size: 38px;
+      letter-spacing: -0.76px;
+      font-weight: 700;
+    }
+    &__text {
+      font-size: 23px;
+      letter-spacing: -0.46px;
+    }
+  }
+}

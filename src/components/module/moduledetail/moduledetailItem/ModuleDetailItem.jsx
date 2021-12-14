@@ -2,21 +2,24 @@ import React from "react";
 import "./ModuleDetailItem.scss";
 
 function ModuleDetailItem(props) {
-  console.log(props.list);
   return (
     <div className="moduledetailitem">
-      <img src={props.img} alt="" className="modulebt__lists__item__img" />
-      <h1 className="modulebt__lists__item__title">{props.title}</h1>
-      <span className="modulebt__lists__item__text">
+      <img src={props.img} alt="" className="moduledetailitem__img" />
+      <h1 className="moduledetailitem__title">{props.title}</h1>
+      <span className="moduledetailitem__text">
         {props.text}
-        <ul className="modulebt__lists__item__text__list">
-          <li className="modulebt__lists__item__text__list__item">
-            {/* {props.list[0]} */}
-          </li>
-          <li className="modulebt__lists__item__text__list__item">
-            {/* {props.list[1]} */}
-          </li>
-        </ul>
+        {props.list.length === 0 ? (
+          <div className="moduledetailitem__text__none"></div>
+        ) : (
+          <ul className="moduledetailitem__text__list">
+            <li className="moduledetailitem__text__list__item">
+              {props.list[0]}
+            </li>
+            <li className="moduledetailitem__text__list__item">
+              {props.list[1]}
+            </li>
+          </ul>
+        )}
       </span>
     </div>
   );
