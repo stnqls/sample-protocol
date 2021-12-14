@@ -2,21 +2,25 @@ import React from "react";
 import "./ModuleDetail.scss";
 import ModuleDetailItem from "./moduledetailItem/ModuleDetailItem";
 
+import { Fade } from "react-reveal";
+
 function ModuleDetail() {
   return (
     <div className="modulebt">
       <div className="inner">
         <ul className="modulebt__lists">
-          <li className="modulebt__lists__item">
-            <ModuleDetailItem
-              img={`/images/icon_sec4_${"01"}.png`}
-              title={"개인 지갑 유지 & 관리"}
-              text={
-                "  비시 실시간 거래와 마이너 선매매의 취약성을 차단하고 탈중앙화 기록 조작과 탈취가 불가능하며 KYC 로그인 인증 없이 누구나 계정 생성 및 거래가 가능합니다."
-              }
-              list={[]}
-            />
-          </li>
+          <Fade bottom duration={1500}>
+            <li className="modulebt__lists__item">
+              <ModuleDetailItem
+                img={`/images/icon_sec4_${"01"}.png`}
+                title={"개인 지갑 유지 & 관리"}
+                text={
+                  "  비시 실시간 거래와 마이너 선매매의 취약성을 차단하고 탈중앙화 기록 조작과 탈취가 불가능하며 KYC 로그인 인증 없이 누구나 계정 생성 및 거래가 가능합니다."
+                }
+                list={[]}
+              />
+            </li>
+          </Fade>
           <li className="modulebt__lists__item">
             <ModuleDetailItem
               img={`/images/icon_sec4_${"02"}.png`}
